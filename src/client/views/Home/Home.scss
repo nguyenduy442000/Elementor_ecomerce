@@ -1,0 +1,33 @@
+
+
+  .section{
+    max-width: 1250px;
+     margin-top: 60px;
+     margin-bottom: 20px;
+     margin: auto;
+    &__newitems{
+      height: 510px;
+      padding: 0 20px;
+    }
+    &__category{
+      margin: 20px 0;
+      padding: 0 20px;
+    }
+
+   
+  }
+  .widgets{
+    width: 100%;
+    height: 41px;
+    &__divider{
+      padding: 20px 0;
+       &--separator{
+        display: block;
+        height: 1px;
+        background-color: #e2e1e3;
+        margin:auto;
+        margin-bottom: 40px;
+        border-radius: 5px;
+       }
+    }
+  }
