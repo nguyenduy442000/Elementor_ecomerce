@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from "../../components/Banner/Banner";
+import Banner from "../../components/Banner/Banner"
 import Bestselles from "../../components/Bestselles/Bestselles";
 import Categories from "../../components/Categories/Categories";
 import Info from "../../components/Info/Info";
@@ -17,7 +17,7 @@ const Home = () => {
         <Slide />
       </div>
       <div>
-        <Banner />
+       <Banner/>
       </div>
       <div className="section">
         <div className="section__newitems">

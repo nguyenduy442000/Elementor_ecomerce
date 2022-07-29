@@ -3,27 +3,28 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Home from "./client/views/Home/Home";
+
 import Slogan from "./client/views/layout/Slogan/Slogan";
 import Navigation from "./client/views/layout/Navigation/Navigation";
 import Footer from "./client/views/layout/Footer/Footer"
 import './app.scss';
-import Catalogue from "./client/components/Catalogue/Catalogue";
-import About from "./client/components/About/About";
-import { Category } from "./data";
+import Catalogue from "./client/views/Catalogue/Catalogue";
+import About from "./client/views/About/About"
+import Account from "./client/views/Account/Account";
+import ShopInfo from "./client/views/ShopInfo/ShopInfo"
 function App() {
   return (
     <div>
     <div className="container background-slogan">
     <Slogan/>
   </div>
-  <div className="container">
+  <div >
     <Navigation />
   </div>
   
     <BrowserRouter>
     <Routes>
-    <Route path='/' element={<About/>}/>
+    <Route path='/' element={<Account/>}/>
     <Route path='/Catalogue' element={<Catalogue/>}/>
 
     </Routes>

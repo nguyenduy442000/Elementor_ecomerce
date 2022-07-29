@@ -5,7 +5,7 @@ import "./newproduct.scss";
 import Slider from "react-slick";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 
-import { Product } from "../../.././data";
+import { Product } from "../../../data";
 const customeSlider = React.createRef();
 
 const NewProduct = () => {

@@ -9,7 +9,7 @@ import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import "./slide.scss";
+
 
 // import required modules
 import { EffectFade, Navigation, Pagination } from "swiper";
@@ -43,7 +43,8 @@ const Slide = () => {
     <div className="slider-container">
     <h1>{item.title}</h1>
     <p>{item.desc}</p>
-    <button>{item.btn}</button>
+    <div><button>{item.btn}</button></div>
+    
  
  </div>
     

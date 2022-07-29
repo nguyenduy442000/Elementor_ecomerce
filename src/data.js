@@ -196,3 +196,83 @@ export const Product =[
     },
 
 ]
+export const blog =[
+    {
+        id:1,
+        img:"https://firebasestorage.googleapis.com/v0/b/ecommerce-elementor.appspot.com/o/Blog%2Fes213-1152x768.jpg?alt=media&token=0c2a5041-7289-4ab2-bc74-823b09fe36fb",
+        title:"New approach to lorem nulla glavrida dolor",
+        category:"Fashion"
+    },
+    {
+        id:2,
+        img:"https://firebasestorage.googleapis.com/v0/b/ecommerce-elementor.appspot.com/o/Blog%2Fes234-1152x768.jpg?alt=media&token=1ce08a61-8875-4845-ac39-5e4dda225f2f",
+        title:"Best new-season lorem ipsum dolor",
+        category:"Architecture"
+    },
+    {
+        id:3,
+        img:"https://firebasestorage.googleapis.com/v0/b/ecommerce-elementor.appspot.com/o/Blog%2Felsh003-1152x768.jpg?alt=media&token=c59fc49a-7f54-4dc5-95a8-8ef12b0d780d",
+        title:"How to make your dolor fames amet",
+        category:"Architecture"
+    },
+    {
+        id:4,
+        img:"https://firebasestorage.googleapis.com/v0/b/ecommerce-elementor.appspot.com/o/Blog%2Fes203-1152x768.jpg?alt=media&token=5a8074b9-a224-4fad-88d3-bfb5aa8fc37f",
+        title:"Suspendisse turpis - urna consectetur in sagittis",
+        category:"Art & design"
+    },
+    {
+        id:5,
+        img:"https://firebasestorage.googleapis.com/v0/b/ecommerce-elementor.appspot.com/o/Blog%2Fim-main-1077731-1152x768.jpg?alt=media&token=dbee265a-764b-450a-a463-360650afed03",
+        title:"Ligula vel urna accumsan placerat",
+        category:"Fashion"
+    },
+    {
+        id:6,
+        img:"https://firebasestorage.googleapis.com/v0/b/ecommerce-elementor.appspot.com/o/Blog%2Fim-main-2007-1152x768.jpg?alt=media&token=d05ededa-9784-4867-b7b6-9746a1048e10",
+        title:"Morbi egestas enim ut nibh faucibu",
+        category:"Art & design"
+    },
+    {
+        id:7,
+        img:"https://firebasestorage.googleapis.com/v0/b/ecommerce-elementor.appspot.com/o/Blog%2Fes9006-1152x768.jpg?alt=media&token=51162903-9a40-4ef3-abe3-24e46d84bfb7",
+        title:"What eleifend posuere tincidunt",
+        category:"Events"
+    },
+    {
+        id:8,
+        img:"https://firebasestorage.googleapis.com/v0/b/ecommerce-elementor.appspot.com/o/Blog%2Fes225-1152x768.jpg?alt=media&token=3419f09f-59cc-40a5-890b-341542f844af",
+        title:"10 best aways to lorem ipsum dolor glavrida",
+        category:"Fashion"
+    },
+    {
+        id:9,
+        img:"https://firebasestorage.googleapis.com/v0/b/ecommerce-elementor.appspot.com/o/Blog%2Fes0039-1152x768.jpg?alt=media&token=0f647ef9-daaf-4113-834e-109bd94187c3",
+        title:"10 ways to hasellus eget tincidunt",
+        category:"Fashion"
+    }, {
+        id:10,
+        img:"https://firebasestorage.googleapis.com/v0/b/ecommerce-elementor.appspot.com/o/Blog%2Fes9001011-1152x768.jpg?alt=media&token=94ce427a-02d1-46ca-aee3-b149ff226aca",
+        title:"How to make nulla glavrida amet",
+        category:"Architecture"
+    },
+    {
+        id:11,
+        img:"https://firebasestorage.googleapis.com/v0/b/ecommerce-elementor.appspot.com/o/Blog%2Fim-main-2011-1152x768.jpg?alt=media&token=74713ad6-f9df-4ced-94d9-908b86c12434",
+        title:"Best way to habitant morbi tristique senectus",
+        category:"Events"
+    },
+    {
+        id:12,
+        img:"https://firebasestorage.googleapis.com/v0/b/ecommerce-elementor.appspot.com/o/Blog%2Fes222-1152x768.jpg?alt=media&token=93a32ff8-f144-48df-b025-2fd386065ab1",
+        title:"Placerat lorem tristique",
+        category:"Architecture "
+    },
+    {
+        id:13,
+        img:"https://firebasestorage.googleapis.com/v0/b/ecommerce-elementor.appspot.com/o/Blog%2Fes209-1152x768.jpg?alt=media&token=37aca1e2-1181-4832-8d79-c6d0d4327fb6",
+        title:"Ligula vel urna accumsan placerat",
+        category:"Art & design"
+    },
+   
+]

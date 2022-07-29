@@ -1,14 +1,23 @@
 import React from "react";
 import "./about.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination, Navigation } from "swiper";
 import image1 from "../../assets/about/about-img1.jpg";
 import image2 from "../../assets/about/about-img2.jpg";
 import image3 from "../../assets/about/about-img3.jpg";
 import * as Fi from "react-icons/fi";
-import * as Fa from "react-icons/fa"
+import * as Fa from "react-icons/fa";
 import imgfirst from "../../assets/about/imageFirst.jpg";
 import imgSecond from "../../assets/about/imgSecond.jpg";
 import imgThird from "../../assets/about/imageThird.jpg";
 import imgFourd from "../../assets/about/imageFourd.jpg";
+import partnersOne from "../../assets/about/Our-partners/partners-one.png";
+import partnersTwo from "../../assets/about/Our-partners/partnerstwo.png";
+import partnersThree from "../../assets/about/Our-partners/partners-three.png";
+import partnersFour from "../../assets/about/Our-partners/partners-four.png";
+import partnersFive from "../../assets/about/Our-partners/partners-five.png";
 const About = () => {
   return (
     <div>
@@ -159,84 +168,147 @@ const About = () => {
               <div
                 className="c-about__image"
                 style={{ backgroundImage: `url(${imgfirst})` }}
-              >
-                
-              </div>
+              ></div>
               <div className="c-about__content">
-                  <h3 className="c-about__content-title">Accessories</h3>
-                  <p className="c-about__content-text">
-                    Nulla amet ipsum dolor sit amet consectetur.
-                  </p>
-                  <div className="c-about__content-btn">View collections</div>
-                </div>
-            </div>
-            <div className="c-about__item item-marginTop">
-            <div
-              className="c-about__image"
-              style={{ backgroundImage: `url(${imgSecond})` }}
-            >
-              
-            </div>
-            <div className="c-about__content">
-                <h3 className="c-about__content-title">Furniture</h3>
+                <h3 className="c-about__content-title">Accessories</h3>
                 <p className="c-about__content-text">
-                Lorem ipsum dolor sit adipiscing elit.
+                  Nulla amet ipsum dolor sit amet consectetur.
                 </p>
                 <div className="c-about__content-btn">View collections</div>
               </div>
-          </div>
-          <div className="c-about__item">
-          <div
-            className="c-about__image"
-            style={{ backgroundImage: `url(${imgThird})` }}
-          >
-            
-          </div>
-          <div className="c-about__content">
-              <h3 className="c-about__content-title">Decor</h3>
-              <p className="c-about__content-text">
-              Dolor sit amet consectetur adipiscing elit.
-              </p>
-              <div className="c-about__content-btn">View collections</div>
             </div>
-        </div>
-        <div className="c-about__item item-marginTop">
-        <div
-          className="c-about__image"
-          style={{ backgroundImage: `url(${imgFourd})` }}
-        >
-        </div>
-        <div className="c-about__content">
-            <h3 className="c-about__content-title">Lighting</h3>
-            <p className="c-about__content-text">
-            Lorem ipsum dolor sit amet consectetur dolor.
-            </p>
-            <div className="c-about__content-btn">View collections</div>
-          </div>
-      </div>
-            
-           
+            <div className="c-about__item item-marginTop">
+              <div
+                className="c-about__image"
+                style={{ backgroundImage: `url(${imgSecond})` }}
+              ></div>
+              <div className="c-about__content">
+                <h3 className="c-about__content-title">Furniture</h3>
+                <p className="c-about__content-text">
+                  Lorem ipsum dolor sit adipiscing elit.
+                </p>
+                <div className="c-about__content-btn">View collections</div>
+              </div>
+            </div>
+            <div className="c-about__item">
+              <div
+                className="c-about__image"
+                style={{ backgroundImage: `url(${imgThird})` }}
+              ></div>
+              <div className="c-about__content">
+                <h3 className="c-about__content-title">Decor</h3>
+                <p className="c-about__content-text">
+                  Dolor sit amet consectetur adipiscing elit.
+                </p>
+                <div className="c-about__content-btn">View collections</div>
+              </div>
+            </div>
+            <div className="c-about__item item-marginTop">
+              <div
+                className="c-about__image"
+                style={{ backgroundImage: `url(${imgFourd})` }}
+              ></div>
+              <div className="c-about__content">
+                <h3 className="c-about__content-title">Lighting</h3>
+                <p className="c-about__content-text">
+                  Lorem ipsum dolor sit amet consectetur dolor.
+                </p>
+                <div className="c-about__content-btn">View collections</div>
+              </div>
+            </div>
           </div>
         </div>
 
-          {/* end collections */}
-          <div className="widgets">
+        {/* end collections */}
+        <div className="widgets">
           <div className="widgets__divider">
             <span className="widgets__divider--separator"></span>
           </div>
         </div>
-         {/* start quote */}
-   <section className="c-about__quote">
-   <div><Fa.FaQuoteRight className="c-about__quote-icon"/></div>
-   <h3 className="c-about__quote-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</h3>
-   <p className="c-about__quote-author">Tiffany Swift - <span>Director Seven Shop</span></p>
-   </section>
-   <div className="widgets">
-   <div className="widgets__divider">
-     <span className="widgets__divider--separator"></span>
-   </div>
- </div>
+        {/* start quote */}
+        <section className="c-about__quote">
+          <div>
+            <Fa.FaQuoteRight className="c-about__quote-icon" />
+          </div>
+          <h3 className="c-about__quote-title">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </h3>
+          <p className="c-about__quote-author">
+            Tiffany Swift - <span>Director Seven Shop</span>
+          </p>
+        </section>
+        <div className="widgets">
+          <div className="widgets__divider">
+            <span className="widgets__divider--separator"></span>
+          </div>
+        </div>
 
+        {/* start Our partners */}
+        <section className="c-about__partners">
+          <div className="c-about__title">
+            <h2
+              style={{
+                fontFamily: "Barlow Semi Condensed, sans-serif",
+                fontSize: "2.4rem",
+                fontWeight: "500",
+                marginBottom: "15px",
+                marginTop: "60px",
+              }}
+            >
+              Our partners
+            </h2>
+
+            <span className="c-about__divider"></span>
+          </div>
+          <Swiper
+            slidesPerView={4}
+            spaceBetween={30}
+            slidesPerGroup={1}
+            loop={true}
+            loopFillGroupWithBlank={true}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <div className="c-about__partners-content">
+                <img src={partnersOne} alt="no results"></img>
+                <h3>Zants</h3>
+                <p>Design magazine</p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="c-about__partners-content">
+                <img src={partnersTwo} alt="no results"></img>
+                <h3>Keane Benson</h3>
+                <p>Furmiture & accessories</p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="c-about__partners-content">
+                <img src={partnersThree} alt="no results"></img>
+                <h3>Aromatique</h3>
+                <p>Home aromas</p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="c-about__partners-content">
+                <img src={partnersFour} alt="no results"></img>
+                <h3>Rouge Waves</h3>
+                <p>Bath & soap</p>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="c-about__partners-content">
+                <img src={partnersFive} alt="no results"></img>
+                <h3>Susan Bradley</h3>
+                <p>Design bureau</p>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </section>
       </div>
     </div>
   );
