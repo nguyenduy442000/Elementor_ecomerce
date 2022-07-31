@@ -1,6 +1,7 @@
 @import "../../sass/mixins";
 .section__newproduct{
-   position: relative;  
+   position: relative; 
+  
    .slick-track {
       display: flex;
       
@@ -35,6 +36,7 @@
 
     .items{
       position: relative; 
+      
       
     
         &--sale{

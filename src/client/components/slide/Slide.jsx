@@ -38,7 +38,7 @@ const Slide = () => {
   {sliderItems.map((item) => (
     <SwiperSlide key={item.id}>
     
-    <div style={{background:`url(${item.img}) center center no-repeat`,height:'560px',position:'relative',display:'flex'}}>
+    <div style={{background:`url(${item.img}) center center no-repeat`,height:'560px',position:'relative',display:'flex',width:'100%',backgroundSize:'cover'}}>
     <div className="background-overlay"></div>
     <div className="slider-container">
     <h1>{item.title}</h1>

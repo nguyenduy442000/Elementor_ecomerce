@@ -21,12 +21,13 @@ import partnersFive from "../../assets/about/Our-partners/partners-five.png";
 const About = () => {
   return (
     <div>
+    <div className="c-about__banner">
+    <div className="c-about-title">
+      <h1>About Seven Shop</h1>
+    </div>
+  </div>
       <div className="c-about">
-        <div className="c-about__banner">
-          <div className="c-about-title">
-            <h1>About Seven Shop</h1>
-          </div>
-        </div>
+       
         <div className="c-about__container">
           {/* start company */}
           <div className="c-about__title">
@@ -72,19 +73,22 @@ const About = () => {
                 </p>
               </div>
             </div>
+          <div className="c-about__picture">
+          <div className="c-about__company-img">
+          <img src={image1} alt="no images" width="100%" height="auto" />
+        </div>
 
-            <div className="c-about__company-img">
-              <img src={image1} alt="no images" width="100%" height="auto" />
-            </div>
+        <div className="c-about__company-img">
+          <div className="c-about__company-img1">
+            <img src={image2} alt="no images" width="100%" />
+          </div>
+          <div className="c-about__company-img2">
+            <img src={image3} alt="no images" width="80%" />
+          </div>
+        </div>
+          </div>
 
-            <div className="c-about__company-img">
-              <div className="c-about__company-img1">
-                <img src={image2} alt="no images" width="100%" />
-              </div>
-              <div className="c-about__company-img2">
-                <img src={image3} alt="no images" width="80%" />
-              </div>
-            </div>
+         
           </div>
         </div>
         {/* end company */}
@@ -262,7 +266,7 @@ const About = () => {
             <span className="c-about__divider"></span>
           </div>
           <Swiper
-            slidesPerView={4}
+            slidesPerView={2}
             spaceBetween={30}
             slidesPerGroup={1}
             loop={true}
@@ -270,6 +274,8 @@ const About = () => {
             navigation={true}
             modules={[Pagination, Navigation]}
             className="mySwiper"
+          
+          
           >
             <SwiperSlide>
               <div className="c-about__partners-content">

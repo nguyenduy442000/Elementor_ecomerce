@@ -18,6 +18,29 @@ const Bestselles = () => {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 2,
+
+    responsive: [{
+
+      breakpoint: 1023,
+      settings: {
+        slidesToShow: 3,
+        infinite: true
+      }
+
+    }, {
+
+      breakpoint: 739,
+      settings: {
+        slidesToShow: 2,
+        infinite: true
+      }
+
+    }, {
+
+      breakpoint: 300,
+      settings: "unslick" // destroys slick
+
+    }]
    
   };
   const gotoNext = () => {

@@ -11,7 +11,7 @@ const Footer = () => {
     <div className='footer__colfirst'>
     <h1 style={{fontSize:'2.4rem',lineheight:'3.1rem',fontWeight:'500',fontFamily:'Barlow Semi Condensed ,sans-serif'}}>001-2345-67-89</h1>
     <p style={{fontSize:'1.3rem',lineHeight:'1.8rem',fontWeight:'400',fontFamily:'Roboto ,sans-serif',color:'#6768ab'}}>Mon. - Fri. 10:00 - 20:00</p>
-    <div style={{fontWeight:'400',fontFamily:'Roboto,sans-serif',color:'#818a91',fontSize:'2rem',lineheight:'2rem',display:'flex',justifyContent:'space-around',paddingRight:'100px'}}>
+    <div className="icon" >
      <MdFacebook/>
      <FaYoutube/>
      <FaTiktok/>

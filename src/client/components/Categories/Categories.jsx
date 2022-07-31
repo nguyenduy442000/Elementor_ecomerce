@@ -6,11 +6,21 @@ import Slider from "react-slick";
 import "./Categories.scss"
 const Categories = () => {
   const settings = {
+    className: "center",
     dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [{
+
+      breakpoint: 739,
+      settings: {
+        slidesToShow: 2,
+        infinite: true
+      }
+
+    }]
   };
   return (
     <div className="categories--row">
