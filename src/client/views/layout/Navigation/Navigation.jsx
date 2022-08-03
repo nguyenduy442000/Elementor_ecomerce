@@ -130,7 +130,7 @@ const Navigation = (props) => {
           <FiUser />
         </span></Link>
 
-        <Link to="/productDetail"  style={{ textDecoration: "none", color: "black" }}><FiShoppingBag /></Link>
+        <Link to="/Cart"  style={{ textDecoration: "none", color: "black" }}><FiShoppingBag /></Link>
           
         </div>
       </div>

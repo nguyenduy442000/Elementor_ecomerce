@@ -107,7 +107,13 @@
       flex-direction: column-reverse;
       .col-1{
         flex-direction: row;
+        width: 48%;
       }
+
+    }
+    .gallrey__description{
+      width: 100%;
+      align-items: center;
     }
     
   }

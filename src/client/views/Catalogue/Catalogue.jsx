@@ -1,4 +1,6 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef,useEffect } from "react";
+
+import API from '../../api/apiConfig'
 import "./catalogue.scss";
 import { HiOutlineChevronDown, HiOutlineChevronUp } from "react-icons/hi";
 import { Product } from "./../../../data";
@@ -8,12 +10,14 @@ import * as Gr from "react-icons/gr";
 import {FiSliders}from 'react-icons/fi';
 import {AiOutlineClose} from 'react-icons/ai'
 import Button from "../../components/Button/Button";
+import {Link} from "react-router-dom"
 const Catalogue = (props) => {
   const {ismobile} = props;
   const [openfilter,setOpenFilter] = useState(false);
   const handleOpenFilter =()=>{
     setOpenFilter(!openfilter);
   }
+  const [product,setProduct] =useState([])
   // isChev
   const [isChevCategory, setisChevCategory] = useState(false);
   const [isChevColor, setischevColor] = useState(false);
@@ -85,6 +89,16 @@ const Catalogue = (props) => {
       openDecor.current.classList.remove("active-item");
     }
   };
+  useEffect(()=>{
+        API.get(`api/product`)
+        .then(res=>{
+          const products = res.data;
+          setProduct(products)
+        })
+        .catch(err=>console.log(err))
+  },[])
+
+   
 
   return (
     <div>
@@ -736,17 +750,20 @@ const Catalogue = (props) => {
             <span>Products</span>
           </div>
           <div className="c-catalogue__list">
-            {Product.map((item) => (
-              <div className="c-catalogue__item" key={item.id}>
-                <div className="c-catalogue__content">
-                  <figure className="c-catalogue__img">
-                    <img src={item.firstimg} alt="no results" />
-                  </figure>
-                  <div className="c-catalogue__info">
-                    <h4 className="c-catalogue__title">{item.title}</h4>
-                    <p className="c-catalogue__price">${item.price}</p>
-                  </div>
-                </div>
+            {product.map((item) => (
+              <div className="c-catalogue__item" key={item._id} >
+              <Link to={`/productDetail/${item._id}`}   style={{ textDecoration: "none", color: "black" }}>
+              <div className="c-catalogue__content">
+              <figure className="c-catalogue__img">
+                <img src={item.firstimg} alt="no results" />
+              </figure>
+              <div className="c-catalogue__info">
+                <h4 className="c-catalogue__title">{item.title}</h4>
+                <p className="c-catalogue__price">${item.price}</p>
+              </div>
+            </div>
+              </Link>
+             
               </div>
             ))}
           </div>
